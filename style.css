@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/greg-rosenke-6QnEf_b47eA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position of the text */
+    left: 50%; /* Adjust the horizontal position of the text */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff; /* Set the text color */
+    font-size: 32px; /* Set the font size */
+    font-family: Arial, sans-serif; /* Set the font family */
+    /* Add any other text styling you need */
+}
