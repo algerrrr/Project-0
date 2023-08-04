@@ -29,7 +29,7 @@ h1 {
     white-space: nowrap; /* Prevent line breaks */
     overflow: hidden;
     border-right: 2px solid black;
-    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -40,4 +40,12 @@ h1 {
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: black; }
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    cursor: grab;
+    position: absolute;
 }
