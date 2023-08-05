@@ -1,4 +1,6 @@
 var element = document.getElementById("typewriter");
+const intro = document.querySelector('.intro')
+const primary = document.querySelector('.primary')
 document.addEventListener("DOMContentLoaded", function () {
 
   var typingSpeed = 100; // Adjust typing speed (milliseconds)
@@ -31,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 setTimeout(function(){
     element.remove()
+intro.style.display = "block"
+primary.style.display = "block"
 },12000)
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -39,7 +43,9 @@ document.addEventListener("DOMContentLoaded", function(){
   setTimeout(function () {
     background.classList.add('resizing');
   }, 12000) // Add the "resizing" class after 12 seconds (12000 milliseconds)
-})
+});
+
+
 
 const box = document.getElementById("box");
 let isDragging = false;
