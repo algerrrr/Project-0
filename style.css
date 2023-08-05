@@ -1,12 +1,8 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("./images/greg-rosenke-6QnEf_b47eA-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
+    overflow: hidden;
 }
 
 #Welcome {
@@ -48,4 +44,40 @@ h1 {
     background-color: #007bff;
     cursor: grab;
     position: absolute;
+}
+
+.intro {
+    color: gray;
+    width: 750px;
+    text-align: right;
+    margin: 15% 0 0 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url("./images/E1C53175-177D-41AA-96CC-2D91A0D87B17-2002-0000022236DB4DE4.JPG"); 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out; /* Transition for smooth resizing */
+}
+
+.resizing {
+    width: 500px;
+    height: 500px;
+    margin: 15% 0 0 60% ;
+    background-image: url("./images/27B2C09A-0994-42DA-A6FB-7E8E3C34E605-20254-000002FBF308DA35.JPG");
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
