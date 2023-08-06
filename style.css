@@ -7,7 +7,8 @@ body, html {
     
 }
 .Welcome {
-    height: fit-content;
+    height: 700px;
+
 
 }
 .container {
@@ -40,18 +41,17 @@ body, html {
     50% { border-color: black; }
 }
 
-.draggable {
+/* .draggable {
     width: 100px;
     height: 100px;
     background-color: #007bff;
     cursor: grab;
     position: absolute;
-}
+} */
 
 .intro {
     color: gray;
     width: 45%;
-    height: 00px;
     text-align: right;
     margin: 10% 0 0 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,6 +59,7 @@ body, html {
     line-height: 2;
     font-weight: bold;
     display: none;
+    background-color: rgb(230, 246, 246);
 }
 
 .background-image {
@@ -88,15 +89,42 @@ body, html {
     
 }
 
-#fade-out {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    height: 550px;
-    background-color: beige;
+.primary {
+    margin-top: 200px;
+    padding: 100px 0;
+    display: none;
+    background-color: rgb(230, 246, 246);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.primary-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.card-image {
+    width: 460px;
+    height: 215px;
+    padding-top: 20px;
 }
 
 
-.primary {
-    margin-top: 200px;
-    display: none;
+.card-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.project-title h2 {
+    height: 215px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
